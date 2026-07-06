@@ -1,0 +1,192 @@
+Bariatric Surgery and Procedures > Adults
+cigna • Version 1
+
+Source Documents:
+Bariatric Surgery and Procedures
+Basic Information
+Type
+procedure
+Title
+Bariatric Surgery and Procedures > Adults
+Payer
+cigna
+Organization
+All Organizations
+Source
+policybot
+URL
+https://static.cigna.com/assets/chcp/pdf/coveragePolicies/medical/mm_0051_coveragepositioncriteria_bariatric_surgery.pdf
+Status
+Published
+Technical Details
+Guideline ID
+019dcffd-232c-77fb-bb96-6bfae0586be7
+Guideline Version
+1
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+43235
+43281
+43631
+43632
+43633
+43634
+43644
+43645
+43659
+43770
+43771
+43772
+43773
+43774
+43775
+43842
+43843
+43845
+43846
+43847
+43848
+43860
+43865
+43886
+43888
+43999
+44238
+44799
+47379
+HCPCS Codes
+C9784
+ICD-10 Codes
+S39
+S39.001A
+S39.001D
+S39.001S
+S39.002A
+S39.002D
+S39.002S
+S39.003A
+S39.003D
+S39.003S
+S39.011A
+S39.011D
+S39.011S
+S39.012A
+S39.012D
+S39.012S
+S39.013A
+S39.013D
+S39.013S
+S39.021A
+S39.021D
+S39.021S
+S39.022A
+S39.022D
+S39.022S
+S39.023A
+S39.023D
+S39.023S
+S39.091A
+S39.091D
+S39.091S
+S39.092A
+S39.092D
+S39.092S
+S39.093A
+S39.093D
+S39.093S
+S39.81XA
+S39.81XD
+S39.81XS
+S39.82XA
+S39.82XD
+S39.82XS
+S39.83XA
+S39.83XD
+S39.83XS
+S39.840A
+S39.840D
+S39.840S
+S39.848A
+S39.848D
+S39.848S
+S39.91XA
+S39.91XD
+S39.91XS
+S39.92XA
+S39.92XD
+S39.92XS
+S39.93XA
+S39.93XD
+S39.93XS
+S39.94XA
+S39.94XD
+S39.94XS
+Markdown Content
+
+Click to view raw markdown
+## Coverage Policy
+
+Coverage for bariatric surgery or revision of a bariatric surgical procedure varies across plans and may be governed by state mandates. Refer to the customer's benefit plan document for coverage details.
+
+This coverage policy statement is organized as follows:  
+1) Criteria that applies to Adults only  
+2) Criteria that applies to Adolescents only  
+3) Criteria that applies to Adults and Adolescents
+
+### Adults
+
+Bariatric surgery for the treatment of obesity in an adult (age ≥ 18 years) using a covered procedure outlined below is considered medically necessary when ALL of the following criteria are met:
+
+*   EITHER of the following:
+    *   BMI (Body Mass Index) ≥35 kg/m2 (class 2 obesity) (BMI ≥27.5 kg/m2 in Asians- when ethnicity is confirmed by provider attestation)
+    *   BMI (Body Mass Index) 30–34.9 kg/m2 (class 1 obesity) (BMI 25–27.4 kg/m2 in Asians- when ethnicity is confirmed by provider attestation) with at least one clinically significant obesity-related comorbidity
+*   A thorough multidisciplinary evaluation within the previous 12 months
+
+### Adolescents
+
+Bariatric surgery for the treatment of morbid obesity in an adolescent (age 11–17 years) is considered medically necessary...
+
+### Adults and Adolescents
+
+The following procedures are considered not medically necessary for reporting bariatric surgery treatment of obesity or morbid obesity...
+
+start
+
+Has the patient had a thorough multidisciplinary evaluation within the previous 12 months?
+
+...
+
+Procedure Medically Necessary
+
+Backoffice
+Administration Panel
+Dashboard
+Customers
+Organizations
+Integrations
+Scheduler
+Form Templates
+Org Integrations
+Submission Settings
+Field Group Rules
+Guideline Documents
+Guidelines
+Guideline Rules
+Locations
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings

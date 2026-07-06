@@ -1,0 +1,99 @@
+"""
+Parser module: converts a raw backoffice copy-paste dump (Ctrl+A)
+into a structured ParsedGuideline object, stripping UI noise,
+sidebar navigation, and technical metadata not needed for validation.
+"""
+
+from dataclasses import dataclass, field
+
+
+# Sidebar navigation items that always appear at the end of a raw dump.
+# Used as an anchor to cut off everything from "Backoffice" onward.
+SIDEBAR_MARKER = "Backoffice"
+
+# UI labels that precede a field value on their own line.
+FIELD_LABELS = [
+    "Title",
+    "Payer",
+    "Organization",
+    "Source",
+    "Status",
+    "Guideline ID",
+    "Guideline Version",
+    "Algorithm Version",
+    "Prompt Version",
+    "URL",
+]
+
+CODE_SECTION_HEADERS = ["CPT Codes", "HCPCS Codes", "ICD-10 Codes"]
+
+
+@dataclass
+class ParsedGuideline:
+    title: str = ""
+    payer: str = ""
+    guideline_id: str = ""
+    source_url: str = ""
+    cpt_codes: list[str] = field(default_factory=list)
+    hcpcs_codes: list[str] = field(default_factory=list)
+    icd10_codes: list[str] = field(default_factory=list)
+    markdown_content: str = ""
+    decision_tree_raw: str = ""
+
+
+def strip_sidebar(raw_text: str) -> str:
+    """Remove the backoffice sidebar navigation block from the end of the dump."""
+    marker_index = raw_text.rfind(SIDEBAR_MARKER)
+    if marker_index == -1:
+        return raw_text
+    return raw_text[:marker_index].rstrip()
+
+
+def extract_field(lines: list[str], label: str) -> str:
+    """Return the value on the line right after a field label, if present."""
+    for i, line in enumerate(lines):
+        if line.strip() == label and i + 1 < len(lines):
+            return lines[i + 1].strip()
+    return ""
+
+
+def extract_code_section(lines: list[str], section_header: str, next_headers: list[str]) -> list[str]:
+    """
+    Collect lines between a code section header (e.g. "CPT Codes")
+    and the next known header, treating each non-empty line as one code.
+    """
+    codes: list[str] = []
+    collecting = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        if stripped == section_header:
+            collecting = True
+            continue
+
+        if collecting and stripped in next_headers:
+            break
+
+        if collecting and stripped:
+            codes.append(stripped)
+
+    return codes
+
+
+def parse_raw_dump(raw_text: str) -> ParsedGuideline:
+    """Parse a raw backoffice Ctrl+A dump into a ParsedGuideline object."""
+    cleaned_text = strip_sidebar(raw_text)
+    lines = cleaned_text.splitlines()
+
+    parsed = ParsedGuideline()
+    parsed.title = extract_field(lines, "Title")
+    parsed.payer = extract_field(lines, "Payer")
+    parsed.guideline_id = extract_field(lines, "Guideline ID")
+    parsed.source_url = extract_field(lines, "URL")
+
+    parsed.cpt_codes = extract_code_section(lines, "CPT Codes", ["HCPCS Codes"])
+    parsed.hcpcs_codes = extract_code_section(lines, "HCPCS Codes", ["ICD-10 Codes"])
+    parsed.icd10_codes = extract_code_section(lines, "ICD-10 Codes", ["Markdown Content"])
+
+    return parsed

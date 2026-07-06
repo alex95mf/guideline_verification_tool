@@ -1,0 +1,130 @@
+Upper Gastrointestinal Endoscopy (Esophagogastroduodenoscopy) > Preoperative Evaluation for Bariatric Surgery
+anthem • Version 1
+
+Source Documents:
+Upper Gastrointestinal Endoscopy (Esophagogastroduodenoscopy)
+Basic Information
+Type
+procedure
+Title
+Upper Gastrointestinal Endoscopy (Esophagogastroduodenoscopy) > Preoperative Evaluation for Bariatric Surgery
+Payer
+anthem
+Organization
+All Organizations
+Source
+policybot
+URL
+https://guidelines.carelonmedicalbenefitsmanagement.com/wp-content/uploads/2025/12/Upper-Gastrointestinal-Endoscopy-Esophagogastroduodenoscopy-2026-04-04.pdf
+Status
+Published
+Technical Details
+Guideline ID
+019df8f8-374c-7409-a6f3-d3b32d201221
+Guideline Version
+1
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+43235
+43239
+HCPCS Codes
+ICD-10 Codes
+B96.81
+K21.9
+K22.70
+K22.710
+K22.711
+K22.719
+Z13.818
+Z13.88
+Z71.89
+Z80.0
+Markdown Content
+
+Click to view raw markdown
+## Preoperative Evaluation of Asymptomatic Patients prior to Bariatric Surgery
+
+Upper endoscopy is considered medically necessary for ANY of the following scenarios:
+
+*   Suspected esophagitis or Barrett's esophagus prior to sleeve gastrectomy
+*   Suspected gastric lesions prior to Roux-en-Y gastrojejunal bypass (RYGB) following H. pylori testing/treatment in ANY of the following high-risk patients:
+    *   Age 55 years or older
+    *   Positive H. pylori testing
+    *   First-degree relative with history of gastric cancer
+    *   Patients of racial or ethnic groups known to be at higher risk for gastric cancer
+start
+
+Is this for preoperative evaluation prior to bariatric surgery?
+
+Is the patient asymptomatic?
+
+Is esophagitis or Barrett's esophagus suspected?
+
+Is sleeve gastrectomy planned?
+
+Are gastric lesions suspected?
+
+Is Roux-en-Y gastrojejunal bypass (RYGB) planned?
+
+Has H. pylori testing/treatment been completed?
+
+Is the patient age 55 years or older?
+
+Are gastric lesions suspected?
+
+Is Roux-en-Y gastrojejunal bypass (RYGB) planned?
+
+Has H. pylori testing/treatment been completed?
+
+Did the patient test positive for H. pylori?
+
+Are gastric lesions suspected?
+
+Is Roux-en-Y gastrojejunal bypass (RYGB) planned?
+
+Has H. pylori testing/treatment been completed?
+
+Does the patient have a first-degree relative with history of gastric cancer?
+
+Are gastric lesions suspected?
+
+Is Roux-en-Y gastrojejunal bypass (RYGB) planned?
+
+Has H. pylori testing/treatment been completed?
+
+Is the patient of a racial or ethnic group known to be at higher risk for gastric cancer?
+
+Procedure Medically Necessary
+
+Backoffice
+Administration Panel
+Dashboard
+Customers
+Organizations
+Integrations
+Scheduler
+Form Templates
+Org Integrations
+Submission Settings
+Field Group Rules
+Guideline Documents
+Guidelines
+Guideline Rules
+Locations
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings

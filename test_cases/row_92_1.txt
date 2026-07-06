@@ -1,0 +1,148 @@
+Preoperative Testing for Low Risk Invasive Procedures and Surgeries > Preoperative Testing (CBC/WBC/PT/PTT/Metabolic Panel/Urinalysis/Chest X-Ray/Resting ECG/Resting Echocardiogram/Pre-Procedure Consultation)
+anthem • Version 2
+
+Source Documents:
+Preoperative Testing for Low Risk Invasive Procedures and Surgeries
+Basic Information
+Type
+procedure
+Title
+Preoperative Testing for Low Risk Invasive Procedures and Surgeries > Preoperative Testing (CBC/WBC/PT/PTT/Metabolic Panel/Urinalysis/Chest X-Ray/Resting ECG/Resting Echocardiogram/Pre-Procedure Consultation)
+Payer
+anthem
+Organization
+All Organizations
+Source
+policybot
+URL
+https://www.anthem.com/medpolicies/abcbs/active/gl_pw_d056675.html
+Status
+Published
+Technical Details
+Guideline ID
+019dfa52-801d-7352-9d51-26529b7de64f
+Guideline Version
+2
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+80047
+80048
+85025
+85027
+85610
+85730
+93000
+93005
+93010
+93306
+93307
+93308
+99242
+99243
+99244
+99245
+HCPCS Codes
+ICD-10 Codes
+Z01
+Z01.810
+Z01.811
+Z01.812
+Z01.818
+Markdown Content
+
+Click to view raw markdown
+Preoperative testing is considered **medically necessary** when ALL the following criteria are met (A, B, and C):
+
+**A. Preoperative testing may include any, or all, of the following when done as part of a preoperative evaluation before low risk invasive procedures or non-cardiac surgeries:**
+
+*   Comprehensive blood counts (CBC, WBC, PT/PTT, metabolic panel);
+*   Urinalysis;
+*   Chest X-rays;
+*   Resting ECG;
+*   Resting echocardiogram;
+*   Pre-procedure consultations.
+
+**and**
+
+**B. Low risk invasive procedures and surgeries may include the following when criteria are met:**
+
+*   Cataract surgery;
+*   Glaucoma surgery;
+*   Upper endoscopy;
+*   Colonoscopy;
+*   Cystoscopy;
+*   Arthroscopy.
+
+**and**
+
+**C. Preoperative testing is considered medically necessary** for persons 65 years of age or older **or** for persons less than 65 years of age with risk factors for postoperative complications or symptoms suggestive of a significant systemic disease process (ASA III or IV*) when the same tests have not been performed in the previous 30 days **and** when **ANY** of the following conditions are present:
+
+*   Anemia; or
+*   Bleeding disorders; or
+*   Other hematologic disorders; or
+*   Cardiovascular disease; or
+*   Pulmonary disease; or
+*   Renal disease; or
+*   Liver disease; or
+*   Endocrine disease; or
+*   Malignancy; or
+*   Hypertension; or
+*   Diabetes; or
+*   Recent upper respiratory infection; or
+*   History of smoking; or
+*   History of alcohol abuse; or
+*   History of steroid use; or
+*   History of anticoagulant therapy.
+
+*\*For definitions of American Society of Anesthesiologists (ASA) physical status classifications, see the Definitions section.*
+
+Preoperative testing is considered **not medically necessary** when **ALL** of the following criteria are met:
+
+*   Age between 16 and 65 years of age; **and**
+*   When the same tests have been performed within 30 days prior to the planned procedure; **and**
+*   Asymptomatic persons without significant systemic disease (ASA I or II*) of any system or risk factors for postoperative complications.
+Version History
+
+Click to view version history (2 versions)
+start
+
+Is this for preoperative evaluationbefore a low risk invasive procedure ornon-cardiac surgery?
+
+Have the same tests NOT been performedin the previous 30 days?
+
+Is the patient 65 years of age or older?
+
+Procedure Medically Necessary
+
+Backoffice
+Administration Panel
+Dashboard
+Customers
+Organizations
+Integrations
+Scheduler
+Form Templates
+Org Integrations
+Submission Settings
+Field Group Rules
+Guideline Documents
+Guidelines
+Guideline Rules
+Locations
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings

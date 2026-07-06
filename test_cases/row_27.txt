@@ -1,0 +1,158 @@
+CT Scans > Wrist CT Scan
+PIPA • Version 1
+
+Source Documents:
+Wrist CT Scan
+Basic Information
+Type
+procedure
+Title
+CT Scans > Wrist CT Scan
+Payer
+PIPA
+Organization
+PIPA Test
+Source
+mcg
+URL
+https://careweb.careguidelines.com/ed29/ac/ac01_030.htm
+Status
+Published
+Technical Details
+Guideline ID
+019dadb1-7ea4-7642-a310-07e47005fd19
+Guideline Version
+1
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+0722T
+73200
+73201
+73202
+77012
+HCPCS Codes
+ICD-10 Codes
+M94.8
+M87.033
+M87.034
+M87.063
+M87.064
+D16.4
+D16.5
+C40.00
+C40.01
+C40.02
+C41.4
+C49.1
+C49.2
+M86.031
+M86.032
+M86.041
+M86.042
+M25.531
+M25.532
+M25.539
+T84.032A
+T84.033A
+T84.038A
+T84.039A
+S62.001A
+S62.002A
+S62.009A
+S62.011A
+S62.012A
+S62.013A
+S62.014A
+S62.015A
+S62.016A
+S63.001A
+S63.002A
+S63.003A
+S63.004A
+S63.005A
+S63.006A
+S63.011A
+S63.012A
+S63.013A
+S63.014A
+S63.015A
+S63.016A
+S52.501A
+S52.502A
+S52.509A
+S52.511A
+S52.512A
+S52.519A
+S52.521A
+S52.522A
+S52.529A
+S52.531A
+S52.532A
+S52.539A
+S52.541A
+S52.542A
+S52.549A
+S52.551A
+S52.552A
+S52.559A
+S52.561A
+S52.562A
+S52.569A
+S52.571A
+S52.572A
+S52.579A
+S52.591A
+S52.592A
+S52.599A
+S52.601A
+S52.602A
+S52.609A
+M79.631
+M79.632
+M79.639
+Z85.830
+Z85.831
+Z85.840
+Z85.841
+Z85.89
+Z09
+Z08
+M06.831
+M06.832
+M06.839
+M10.031
+M10.032
+M10.039
+D57.00
+D57.1
+D57.20
+D57.40
+D57.80
+T38.0X5A
+T38.0X5D
+T38.0X5S
+Z79.52
+Markdown Content
+
+Click to view raw markdown
+## Clinical Indications
+Wrist CT scan may be indicated for 1 or more of the following:
+
+Bone anatomy or structural defect evaluation needed, as indicated by 1 or more of the following:
+- Assessment of calcinosis in systemic sclerosis when information is required for therapeutic management
+- Avascular necrosis or osteonecrosis (eg, Kienbock disease), suspected
+
+Cancer or neoplasm evaluation or staging needed
+
+Infection, known or suspected
+
+Pain, chronic, localized to wrist
+
+Postop

@@ -1,0 +1,303 @@
+Osteoarthritis of the Knee: Selected Treatments - CPB 0673 > Knee Arthroscopy > Arthroscopic Knee Surgery with or without Partial Meniscectomy or Meniscal Repair
+aetna • Version 1
+
+Source Documents:
+c4ac3b26
+Basic Information
+Type
+procedure
+Title
+Osteoarthritis of the Knee: Selected Treatments - CPB 0673 > Knee Arthroscopy > Arthroscopic Knee Surgery with or without Partial Meniscectomy or Meniscal Repair
+Payer
+aetna
+Organization
+All Organizations
+Source
+policybot
+URL
+https://www.aetna.com/cpb/medical/data/600_699/0673.html
+Status
+Published
+Technical Details
+Guideline ID
+019d4145-a69e-7e22-98a4-23f652aea666
+Guideline Version
+1
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+29874
+29880
+29881
+29882
+29883
+HCPCS Codes
+G0289
+ICD-10 Codes
+M17.0
+M17.1
+M17.10
+M17.11
+M17.12
+M17.2
+M17.3
+M17.30
+M17.31
+M17.32
+M17.33
+M17.4
+M17.5
+M17.9
+M23.000
+M23.001
+M23.002
+M23.003
+M23.004
+M23.005
+M23.006
+M23.007
+M23.009
+M23.010
+M23.011
+M23.012
+M23.013
+M23.014
+M23.015
+M23.016
+M23.017
+M23.019
+M23.020
+M23.021
+M23.022
+M23.023
+M23.024
+M23.025
+M23.026
+M23.027
+M23.029
+M23.030
+M23.031
+M23.032
+M23.033
+M23.034
+M23.035
+M23.036
+M23.037
+M23.039
+M23.040
+M23.041
+M23.042
+M23.043
+M23.044
+M23.045
+M23.046
+M23.047
+M23.049
+M23.050
+M23.051
+M23.052
+M23.053
+M23.054
+M23.055
+M23.056
+M23.057
+M23.059
+M23.060
+M23.061
+M23.062
+M23.063
+M23.064
+M23.065
+M23.066
+M23.067
+M23.069
+M23.200
+M23.201
+M23.202
+M23.203
+M23.204
+M23.205
+M23.206
+M23.207
+M23.209
+M23.210
+M23.211
+M23.212
+M23.213
+M23.214
+M23.215
+M23.216
+M23.217
+M23.219
+M23.220
+M23.221
+M23.222
+M23.223
+M23.224
+M23.225
+M23.226
+M23.227
+M23.229
+M23.230
+M23.231
+M23.232
+M23.233
+M23.234
+M23.235
+M23.236
+M23.237
+M23.239
+M23.240
+M23.241
+M23.242
+M23.243
+M23.244
+M23.245
+M23.246
+M23.247
+M23.249
+M23.250
+M23.251
+M23.252
+M23.253
+M23.254
+M23.255
+M23.256
+M23.257
+M23.259
+M23.260
+M23.261
+M23.262
+M23.263
+M23.264
+M23.265
+M23.266
+M23.267
+M23.269
+M23.300
+M23.301
+M23.302
+M23.303
+M23.304
+M23.305
+M23.306
+M23.307
+M23.309
+M23.310
+M23.311
+M23.312
+M23.313
+M23.314
+M23.315
+M23.316
+M23.317
+M23.319
+M23.320
+M23.321
+M23.322
+M23.323
+M23.324
+M23.325
+M23.326
+M23.327
+M23.329
+M23.330
+M23.331
+M23.332
+M23.333
+M23.334
+M23.335
+M23.336
+M23.337
+M23.339
+M23.340
+M23.341
+M23.342
+M23.343
+M23.344
+M23.345
+M23.346
+M23.347
+M23.349
+M23.350
+M23.351
+M23.352
+M23.353
+M23.354
+M23.355
+M23.356
+M23.357
+M23.359
+M23.360
+M23.361
+M23.362
+M23.363
+M23.364
+M23.365
+M23.366
+M23.367
+M23.369
+M25.561
+M25.562
+M25.569
+M25.661
+M25.662
+M25.669
+Q68.6
+Markdown Content
+
+Click to view raw markdown
+Arthroscopic knee surgery (with or without partial meniscectomy or meniscal repair) for persons presenting with significant knee pain plus mechanical symptoms and no more than mild osteoarthritis (Kellgren-Lawrence 0, 1, or 2, or modified Outerbridge Grade 0, 1, or 2) with radiologic confirmation of the pathology (X-ray for loose bodies, MRI for meniscal tears and/or loose bodies), and failure of conservative therapy as noted below.
+
+Conservative therapy: History of unsuccessful conservative therapy (non-surgical medical management with at least 6 weeks of formal physical therapy in the past year (in-person as opposed to home or virtual physical therapy). Physical therapy needs to be confirmed either by the actual PT notes, or by documentation in the member claims history; conservative treatment can be waived if the members knee is "locked" due to a displaced bucket handle tear of the meniscus.
+
+Note: For purposes of this policy, Aetna will consider the official written report of complex imaging studies (e.g., CT, MRI). If the operating surgeon disagrees with the official written report, the surgeon should document that disagreement. The surgeon should discuss the disagreement with the provider who did the official interpretation, and there should also be a written addendum to the official report indicating agreement or disagreement with the operating surgeon.
+Start
+
+Does the person present with significantknee pain?
+
+Does the person have mechanicalsymptoms?
+
+Does the person have no more than mildosteoarthritis (Kellgren-Lawrence 0, 1,or 2, or modified Outerbridge Grade 0,1, or 2)?
+
+Is there radiologic confirmation of thepathology (X-ray for loose bodies, MRIfor meniscal tears and/or loose bodies)?
+
+Has conservative therapy failed asrequired?
+
+Does the member have a history ofunsuccessful conservative therapy withat least 6 weeks of formal in-personphysical therapy in the past year(confirmed by PT notes or member claimshistory)?
+
+Is the member's knee locked due to adisplaced bucket handle tear of themeniscus (allowing waiver ofconservative treatment)?
+
+Procedure Medically Necessary
+
+Backoffice
+Administration Panel
+Dashboard
+Customers
+Organizations
+Integrations
+Scheduler
+Form Templates
+Org Integrations
+Submission Settings
+Field Group Rules
+Guideline Documents
+Guidelines
+Guideline Rules
+Locations
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings
