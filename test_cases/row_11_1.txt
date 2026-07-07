@@ -1,0 +1,222 @@
+Nuclear Imaging for Noncancer Indications - Medicare Advantage
+humana • Version 1
+
+Source Documents:
+Nuclear Imaging for Noncancer Indications - Medicare Advantage
+Basic Information
+Type
+procedure
+Title
+Nuclear Imaging for Noncancer Indications - Medicare Advantage
+Payer
+humana
+Organization
+All Organizations
+Source
+policybot
+URL
+https://dctm.humana.com/Mentor/Web/v.aspx?objectID=090009298a481a5e&searchID=ffa6285d-6d76-4bf1-a4e4-8ae5d0b781f8&dl=1[external_policy_id=2b8cbfad-fd4a-416a-9ea0-ac385d2d4f7b]
+Status
+Published
+Technical Details
+Guideline ID
+019d6862-38d8-7de9-8a34-3cf36a1415d1
+Guideline Version
+1
+Algorithm Version
+1
+Prompt Version
+1
+Metadata
+
+Click to view JSON
+Medical Codes
+CPT Codes
+70450
+70460
+70470
+70480
+70481
+70482
+70486
+70487
+70488
+70490
+70491
+70492
+70551
+70552
+70553
+71250
+71260
+71270
+71551
+71552
+72125
+72126
+72127
+72128
+72129
+72130
+72131
+72132
+72133
+72141
+72142
+72146
+72147
+72148
+72149
+72156
+72157
+72158
+72192
+72193
+72194
+72195
+72196
+72197
+73200
+73201
+73202
+73700
+73701
+73702
+74150
+74160
+74170
+74176
+74177
+74178
+74181
+74182
+74183
+76380
+76497
+76498
+76999
+78608
+78811
+78812
+78813
+78814
+78815
+78816
+78999
+HCPCS Codes
+ICD-10 Codes
+J15
+J15.0
+J15.1
+J15.20
+J15.211
+J15.212
+J15.29
+J15.3
+J15.4
+J15.5
+J15.6
+J15.61
+J15.69
+J15.7
+J15.8
+J15.9
+Markdown Content
+
+Click to view raw markdown
+## Nuclear Imaging for Noncancer Indications - Medical Necessity Criteria
+
+### Description and Clinical Background
+
+Nuclear imaging refers to a method of producing images by detecting radiation from different parts of the body after a radioactive tracer is given to an individual. The images are digitally generated on a computer and interpreted to make a diagnosis. Nuclear imaging (also referred to as radionuclide imaging) includes, but may not be limited to, bone scans, gallium scans, positron emission tomography or fusion imaging.
+
+Positron emission tomography (PET) scan is an imaging technique that assesses the function of tissues and organs by monitoring metabolic or biochemical activity while tracking the movement and concentration of an introduced (eg, intravenously, orally) radioactive contrast agent.
+
+Fusion imaging combines two different imaging techniques to create a more detailed picture than either scan individually. Positron emission tomography with computed tomography (PET/CT) is an integrated radiologic imaging test that provides simultaneous anatomic, functional and metabolic information about the area of the body being examined. The individual imaging studies (eg, PET and CT) can be performed at the same time (concurrent imaging) or in separate sessions which are subsequently combined using specialized software (nonconcurrent imaging). Total-Body PET/CT, also known as long axial field-of-view PET/CT, enables imaging of the whole body in a single scan. PET/CT is used in the evaluation of several nononcologic conditions including, but not limited to, Alzheimer's dementia (AD), fever of unknown origin (FUO), infections (eg, osteomyelitis, spondylodiscitis) and refractory seizures.
+
+PET and PET/CT employ the use of radioactive diagnostic agents designed to detect abnormalities that may be specific to a particular indication. These include, but may not be limited to:
+
+*   F-18 Fluorodeoxyglucose (FDG) is the most common radioactive diagnostic agent used to diagnose, stage, restage and monitor a variety of conditions.
+*   Beta amyloid imaging uses radioactive diagnostic agents that bind to amyloid plaques that develop in the brains of individuals with Alzheimer's disease. The radioactive diagnostic agents approved for use with beta amyloid imaging include: Florbetaben F-18 (Neuraceq), Florbetapir F-18 (Amyvid), and Flutemetamol F-18 (Vizamyl).
+*   Tau imaging enables detection, and, in some cases, staging of Alzheimer's disease by detecting the neurofibrillary tau tangles that can appear in the middle to late stages of the condition. The only FDA-approved tau radioactive diagnostic agent is flortaucipir F-18 (Tauvid).
+
+### Coverage Determination - Medical Necessity Criteria
+
+Humana and subsidiaries follow the Medicare requirements that only allow coverage and payment for services that are reasonable and necessary for the diagnosis and treatment of illness or injury or to improve the functioning of a malformed body member except as specifically allowed by Medicare.
+
+Humana and subsidiaries apply any applicable National Coverage Determination (NCD) and any applicable Local Coverage Determinations (LCDs) to the services and jurisdiction at issue.
+
+#### FDG PET (78608, 78811, 78812, 78813) AND PET/CT (78814, 78815, 78816)
+
+While CMS NCD FDG PET for Dementia and Neurodegenerative Diseases (220.6.13) and NCD FDG PET for Refractory Seizures (220.6.9) provides guidance for the use of FDG PET in the evaluation of dementia or neurodegenerative diseases and refractory seizures, it does not provide specific guidance for when the use of FDG PET/CT is considered medically reasonable and necessary for all evidence based indications. To support consistent application of medical necessity criteria across all jurisdictions, Humana and subsidiaries may consider the following to interpret or supplement existing CMS guidance:
+
+For jurisdictions without an LCD (J5/J8, J6/JK, JE, JF, JH/JL, JJ/JM, JN), Humana and subsidiaries determine medical necessity for PET for the treatment of noncardiac inflammation or infection (eg, FUO, osteomyelitis, spondylodiscitis) based on the criteria contained in LCD – Positron Emission Tomography (PET) Scan for Inflammation and Infection (L39521).
+
+Either FDG PET or FDG PET/CT will be considered medically reasonable and necessary for any indication where FDG PET would be considered medically reasonable and necessary based on the CMS guidance listed above (220.6.13, 220.6.9, L39521).
+
+#### BETA AMYLOID PET AND PET/CT
+
+Amyloid PET or PET/CT with an approved radioactive diagnostic agent will be considered medically reasonable and necessary for the diagnosis of Alzheimer's disease when criteria are met, and for monitoring response to treatment.
+
+#### TAU PET AND PET/CT
+
+Tau PET or PET/CT with an approved radioactive diagnostic agent will be considered medically reasonable and necessary for the diagnosis of Alzheimer's disease when criteria are met.
+
+#### FUSION OF NONCONCURRENT IMAGING STUDIES
+
+The fusion and interpretation of nonconcurrent PET and CT images into a single system (PET/CT) can be approved for any indication where PET/CT would be considered medically reasonable and necessary.
+
+### Coverage Limitations
+
+#### Screening PET AND PET/CT
+
+Screening PET or PET/CT (beta amyloid, FDG or tau) for the detection of Alzheimer's disease may not be considered a benefit.
+
+#### Other Fusion Imaging
+
+The following fusion imaging procedures for noncancer indications will not be considered medically reasonable and necessary: MRI/CT, SPECT/MRI.
+
+#### PET/MRI
+
+PET/MRI for noncancer indications will not be considered medically reasonable and necessary.
+Start
+
+Is FDG PET or FDG PET/CT being requested?
+
+Procedure Medically Necessary
+
+Backoffice
+Administration Panel
+Dashboard
+Customers
+Organizations
+Integrations
+Scheduler
+Form Templates
+Org Integrations
+Submission Settings
+Field Group Rules
+Guideline Documents
+Guidelines
+Guideline Rules
+Locations
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings
+Rules
+Rulesets
+Secrets
+Feedbacks
+Fillers
+AI Workbench
+Reports
+Formulary Arena
+Audit Logs
+System Settings
