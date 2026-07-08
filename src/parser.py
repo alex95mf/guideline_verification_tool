@@ -39,6 +39,7 @@ class ParsedGuideline:
     icd10_codes: list[str] = field(default_factory=list)
     markdown_content: str = ""
     decision_tree_raw: str = ""
+    parsing_warnings: list[str] = field(default_factory=list)
 
 
 def strip_sidebar(raw_text: str) -> str:
@@ -55,6 +56,12 @@ def extract_field(lines: list[str], label: str) -> str:
         if line.strip() == label and i + 1 < len(lines):
             return lines[i + 1].strip()
     return ""
+
+
+def section_header_exists(lines: list[str], section_header: str) -> bool:
+    """Check whether a section header line is present in the dump at all,
+    regardless of whether it has any codes listed under it."""
+    return any(line.strip() == section_header for line in lines)
 
 
 def extract_code_section(lines: list[str], section_header: str, next_headers: list[str]) -> list[str]:
@@ -92,8 +99,36 @@ def parse_raw_dump(raw_text: str) -> ParsedGuideline:
     parsed.guideline_id = extract_field(lines, "Guideline ID")
     parsed.source_url = extract_field(lines, "URL")
 
+    required_fields = {
+        "Title": parsed.title,
+        "Payer": parsed.payer,
+        "Guideline ID": parsed.guideline_id,
+        "URL": parsed.source_url,
+    }
+    for field_name, value in required_fields.items():
+        if not value:
+            parsed.parsing_warnings.append(
+                f"Required field '{field_name}' came back empty. "
+                f"This usually means the backoffice format changed or "
+                f"the dump is incomplete, not that the field is legitimately blank."
+            )
+
     parsed.cpt_codes = extract_code_section(lines, "CPT Codes", ["HCPCS Codes"])
     parsed.hcpcs_codes = extract_code_section(lines, "HCPCS Codes", ["ICD-10 Codes"])
     parsed.icd10_codes = extract_code_section(lines, "ICD-10 Codes", ["Markdown Content"])
+
+    code_sections = {
+        "CPT Codes": parsed.cpt_codes,
+        "HCPCS Codes": parsed.hcpcs_codes,
+        "ICD-10 Codes": parsed.icd10_codes,
+    }
+    for section_name, codes in code_sections.items():
+        if not codes and not section_header_exists(lines, section_name):
+            parsed.parsing_warnings.append(
+                f"Section header '{section_name}' was not found in the dump at all. "
+                f"An empty list here is likely a parsing failure, not a legitimately "
+                f"empty section (compare to a case where the header exists but has "
+                f"no codes underneath, which is fine)."
+            )
 
     return parsed

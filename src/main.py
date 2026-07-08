@@ -24,6 +24,15 @@ def main():
     print("HCPCS Codes:", parsed.hcpcs_codes)
     print("ICD-10 Codes:", parsed.icd10_codes)
 
+    if parsed.parsing_warnings:
+        print()
+        print("PARSING WARNINGS:")
+        for warning in parsed.parsing_warnings:
+            print(f"  - {warning}")
+    else:
+        print()
+        print("No parsing warnings.")
+
 
 if __name__ == "__main__":
     main()
