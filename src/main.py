@@ -24,6 +24,14 @@ def main():
     print("HCPCS Codes:", parsed.hcpcs_codes)
     print("ICD-10 Codes:", parsed.icd10_codes)
 
+    print()
+    print("Markdown Content:")
+    print(parsed.markdown_content)
+
+    print()
+    print("Decision Tree Raw:")
+    print(parsed.decision_tree_raw)
+
     if parsed.parsing_warnings:
         print()
         print("PARSING WARNINGS:")

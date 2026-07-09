@@ -88,6 +88,69 @@ def extract_code_section(lines: list[str], section_header: str, next_headers: li
     return codes
 
 
+MARKDOWN_END_MARKERS = ["version history"]
+DECISION_TREE_START_MARKERS = ["start"]
+
+
+def extract_markdown_content(lines: list[str]) -> str:
+    """
+    Collect the raw markdown text between the "Click to view raw markdown"
+    anchor and whichever comes first: a "Version History" marker or a
+    "start"/"Start" marker (decision tree beginning). Matching against
+    these markers is case-insensitive since capitalization is inconsistent
+    across payers (e.g. Aetna uses "Start", others use "start").
+
+    If neither marker is ever found, the markdown runs to the end of the
+    cleaned text (e.g. MCG PIPA dumps that have no decision tree at all).
+    """
+    anchor = "Click to view raw markdown"
+    collecting = False
+    content_lines: list[str] = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        if not collecting:
+            if stripped == anchor:
+                collecting = True
+            continue
+
+        lowered = stripped.lower()
+        if lowered in MARKDOWN_END_MARKERS or lowered in DECISION_TREE_START_MARKERS:
+            break
+
+        content_lines.append(line)
+
+    return "\n".join(content_lines).strip()
+
+
+def extract_decision_tree_raw(lines: list[str]) -> str:
+    """
+    Collect the raw decision tree text starting right after a
+    "start"/"Start" marker line, through the end of the cleaned text
+    (the sidebar has already been stripped by strip_sidebar, so this
+    naturally includes the terminal "Procedure Medically Necessary"
+    result node).
+
+    If no "start" marker is found, returns an empty string (e.g. MCG
+    PIPA dumps that have no decision tree).
+    """
+    collecting = False
+    tree_lines: list[str] = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        if not collecting:
+            if stripped.lower() in DECISION_TREE_START_MARKERS:
+                collecting = True
+            continue
+
+        tree_lines.append(line)
+
+    return "\n".join(tree_lines).strip()
+
+
 def parse_raw_dump(raw_text: str) -> ParsedGuideline:
     """Parse a raw backoffice Ctrl+A dump into a ParsedGuideline object."""
     cleaned_text = strip_sidebar(raw_text)
@@ -130,5 +193,8 @@ def parse_raw_dump(raw_text: str) -> ParsedGuideline:
                 f"empty section (compare to a case where the header exists but has "
                 f"no codes underneath, which is fine)."
             )
+
+    parsed.markdown_content = extract_markdown_content(lines)
+    parsed.decision_tree_raw = extract_decision_tree_raw(lines)
 
     return parsed
