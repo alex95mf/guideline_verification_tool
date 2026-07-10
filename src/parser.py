@@ -64,13 +64,22 @@ def section_header_exists(lines: list[str], section_header: str) -> bool:
     return any(line.strip() == section_header for line in lines)
 
 
+ALL_KNOWN_SECTION_HEADERS = ["CPT Codes", "HCPCS Codes", "ICD-10 Codes", "Markdown Content"]
+
+
 def extract_code_section(lines: list[str], section_header: str, next_headers: list[str]) -> list[str]:
     """
     Collect lines between a code section header (e.g. "CPT Codes")
     and the next known header, treating each non-empty line as one code.
+
+    Stops at ANY known section header (not just the expected next one)
+    to prevent bleeding into a later section if an intermediate header
+    is missing from the dump (e.g. HCPCS Codes shouldn't swallow
+    Markdown Content just because ICD-10 Codes wasn't found).
     """
     codes: list[str] = []
     collecting = False
+    stop_headers = set(next_headers) | set(ALL_KNOWN_SECTION_HEADERS) - {section_header}
 
     for line in lines:
         stripped = line.strip()
@@ -79,7 +88,7 @@ def extract_code_section(lines: list[str], section_header: str, next_headers: li
             collecting = True
             continue
 
-        if collecting and stripped in next_headers:
+        if collecting and stripped in stop_headers:
             break
 
         if collecting and stripped:
