@@ -23,6 +23,7 @@ from parser import parse_raw_dump
 from rules_engine import detect_icd10_parent_bugs, detect_j15_jurisdiction_suspect
 from source_library import load_index, get_source_document
 from pdf_text import extract_text_from_pdf
+from markdown_evaluator import evaluate_markdown
 
 OUTPUT_FOLDER = "output"
 
@@ -98,6 +99,18 @@ def generate_comparison_view(dump_file_path):
           f"{len(text_result['text'])} caracteres) guardado en:")
     print(f"  {output_path}")
     print("Abrelo en VS Code para hacer Ctrl+F y comparar contra el markdown/arbol de arriba.")
+
+    print()
+    print("--- EVALUACION AUTOMATICA DEL MARKDOWN (Modulo 4) ---")
+    eval_result = evaluate_markdown(
+        breadcrumb_title=parsed.title,
+        markdown_content=parsed.markdown_content,
+        source_text=text_result["text"],
+    )
+    print(f"Resultado: {eval_result['result']}")
+    print(f"Hallazgo: {eval_result['finding']}")
+    if eval_result.get("mock"):
+        print("(NOTA: esta es una respuesta simulada, no una evaluacion real de IA)")
 
 
 if __name__ == "__main__":
